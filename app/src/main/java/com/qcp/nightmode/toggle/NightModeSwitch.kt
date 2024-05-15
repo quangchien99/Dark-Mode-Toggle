@@ -119,6 +119,13 @@ class NightModeSwitch @JvmOverloads constructor(
         canvas.save()
         canvas.clipPath(path)
 
+        // Calculate the offset positions for background movement and scaling
+        val scaledWidth = switchWidth * 1.25f
+        val scaledHeight = switchHeight * 1.25f
+
+        val backgroundLeft = lerp(-switchWidth * 0.25f, -switchWidth * 0.1f, offset)
+        val backgroundTop = lerp(-switchHeight * 0.25f, -switchHeight * 0.1f, offset)
+
         // Draw background
         backgroundPaint.color = lerpColor(BlueSky, NightSky, offset)
         canvas.drawRoundRect(
@@ -142,9 +149,14 @@ class NightModeSwitch @JvmOverloads constructor(
             borderPaint
         )
 
-        // Draw background drawable
+        // Draw background drawable with scaling and translation
         backgroundDrawable?.let {
-            it.setBounds(0, 0, switchWidth.toInt(), switchHeight.toInt())
+            it.setBounds(
+                backgroundLeft.toInt(),
+                backgroundTop.toInt(),
+                (backgroundLeft + scaledWidth).toInt(),
+                (backgroundTop + scaledHeight).toInt()
+            )
             it.draw(canvas)
         }
 
