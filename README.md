@@ -16,4 +16,4 @@ This is a Demo Android application that implements a custom dark mode switch to 
 
 ## License 📄
 
-Feel free to use this code. I also took inspiration and code snippets from someone else.
+Feel free to use this code. I also took inspiration and some logic code from someone else.
