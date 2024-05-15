@@ -6,7 +6,7 @@ This is a Demo Android application that implements a custom dark mode switch to 
 
 ## App 📲 Screenshots 📸
 
-![Light Mode](images/light.jpeg) ![Night Mode](images/night.jpeg)
+![Light Mode](images/light.jpg) ![Night Mode](images/night.jpg)
 
 ## App 📲 Demo 📸
 
