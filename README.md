@@ -5,8 +5,10 @@
 This is a Demo Android application that implements a custom dark mode switch to toggle between light and dark themes with animation.
 
 ## App 📲 Screenshots 📸
-
-![Light Mode](images/light.jpg) ![Night Mode](images/night.jpg)
+<p float="left">
+  <img src="images/light.jpg" width="49%" />
+  <img src="images/night.jpg" width="49%" /> 
+</p>
 
 ## App 📲 Demo 📸
 
